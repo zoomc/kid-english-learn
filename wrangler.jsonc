@@ -5,6 +5,8 @@
   "compatibility_date": "2026-10-01",
   "workers_dev": true,
   "preview_urls": false,
+  // 国内访问用自定义域名（workers.dev 在大陆打不开）；Cloudflare 自动建 DNS 记录和证书
+  "routes": [{ "pattern": "english.zoomlab.top", "custom_domain": true }],
   "assets": {
     "directory": "./public",
     "html_handling": "auto-trailing-slash",

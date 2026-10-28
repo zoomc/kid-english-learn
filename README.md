@@ -2,7 +2,7 @@
 
 给 **5–7 岁** 孩子的英语启蒙小网站。纯静态页面，打开就能用，不用注册。
 
-在线体验：https://kid-english-learn.cmjfire.workers.dev
+在线体验：https://english.zoomlab.top （备用：https://kid-english-learn.cmjfire.workers.dev ，国内可能打不开）
 
 ## 第一期：自然拼读 Phonics
 

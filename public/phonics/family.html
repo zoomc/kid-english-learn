@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>拼读家族 · 宝贝英语乐园</title>
+  <meta name="theme-color" content="#cdeeff">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦉</text></svg>">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="icon-btn" href="./" aria-label="回目录">⬅️</a>
+    <span class="brand" id="crumb">🔤 自然拼读</span>
+    <span class="spacer"></span>
+    <span class="chip" id="coins">🪙 0</span>
+    <button class="icon-btn" id="settings" aria-label="设置">⚙️</button>
+  </header>
+
+  <main class="wrap">
+    <section class="fam-hero">
+      <div id="mascot"></div>
+      <div class="title">
+        <h1 id="fam-title"></h1>
+        <div class="sub" id="fam-sub"></div>
+      </div>
+      <button class="sound-btn" id="fam-sound">🔊 <span class="ipa" id="fam-ipa"></span></button>
+    </section>
+    <div class="bubble" id="fam-tip" style="margin-top: 8px"></div>
+
+    <nav class="tabs" id="tabs" aria-label="家族里的组合"></nav>
+
+    <div class="modes" id="modes">
+      <button class="mode" data-mode="learn"><span class="e">📖</span>学一学</button>
+      <button class="mode" data-mode="listen"><span class="e">👂</span>听音选图</button>
+      <button class="mode" data-mode="spell"><span class="e">🧩</span>选拼写</button>
+    </div>
+
+    <section id="stage"></section>
+
+    <div class="set-actions" style="margin-top: 28px" id="fam-nav"></div>
+  </main>
+
+  <script src="../js/phonics-data.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/family.js"></script>
+</body>
+</html>

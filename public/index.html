@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>宝贝英语乐园 · Kid English</title>
+  <meta name="description" content="给 5-7 岁孩子的英语启蒙：自然拼读家族、卡通互动、真人语速发音、自动记住学习进度。">
+  <meta name="theme-color" content="#cdeeff">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦉</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="logo">🦉</span><span>宝贝英语乐园</span></a>
+    <span class="spacer"></span>
+    <span class="chip" id="coins" title="学习获得的星星币">🪙 0</span>
+    <button class="icon-btn" id="settings" aria-label="设置">⚙️</button>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div id="mascot"></div>
+      <div>
+        <h1><span class="en">Hello, little reader!</span>一起读英语吧</h1>
+        <p class="muted">我是猫头鹰 Ollie，点点我听我说话～</p>
+      </div>
+    </section>
+
+    <a class="continue hidden" id="continue" href="phonics/">
+      <span class="big">🚀</span>
+      <span class="txt"><b id="continue-title">继续学习</b><br><span class="muted" id="continue-sub"></span></span>
+      <span class="btn small primary">出发</span>
+    </a>
+
+    <div class="stats" id="stats"></div>
+
+    <h2 class="section-title">🎒 选一个乐园</h2>
+    <div class="modules">
+      <a class="module phonics" href="phonics/">
+        <span class="tag">第一期</span>
+        <span class="ico">🔤</span>
+        <h3>自然拼读</h3>
+        <p>Phonics · 看字母就会读</p>
+      </a>
+      <div class="module sight soon" data-soon>
+        <span class="tag">即将开放</span>
+        <span class="ico">👀</span>
+        <h3>高频词</h3>
+        <p>Sight Words · 一眼认出来</p>
+      </div>
+      <div class="module story soon" data-soon>
+        <span class="tag">即将开放</span>
+        <span class="ico">📚</span>
+        <h3>绘本故事</h3>
+        <p>Stories · 用拼读读故事</p>
+      </div>
+      <div class="module song soon" data-soon>
+        <span class="tag">即将开放</span>
+        <span class="ico">🎵</span>
+        <h3>英文儿歌</h3>
+        <p>Songs · 边唱边学</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">🏅 我的贴纸册 <span class="muted small" id="sticker-count"></span></h2>
+    <div class="stickers" id="stickers"></div>
+    <p class="muted small">每学完一个拼读家族（拿到 3 颗星），就能点亮一张贴纸。</p>
+  </main>
+
+  <footer class="footer">
+    学习进度保存在这台设备的浏览器里 · 开源项目 <a href="https://github.com/zoomc/kid-english-learn" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+
+  <script src="js/phonics-data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

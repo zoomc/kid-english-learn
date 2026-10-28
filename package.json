@@ -1,0 +1,13 @@
+{
+  "name": "kid-english-learn",
+  "private": true,
+  "description": "给 5-7 岁孩子的英语启蒙静态站：自然拼读家族、卡通互动、发音、学习进度",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "bash scripts/deploy.sh"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "license": "MIT"
+}
